@@ -1,5 +1,52 @@
+@font-face {
+  font-family: candy;
+  src: url("../public/fonts/candy/candy.ttf");
+}
+
+@font-face {
+  font-family: holiday;
+  src: url("../public/fonts/holiday/holiday.otf");
+}
+
+@font-face {
+  font-family: candyinc;
+  src: url("../public/fonts/candyinc/candyinc.otf");
+}
+
+@font-face {
+  font-family: bdaynumbers;
+  src: url("../public/fonts/bdaynumbers/bdaynumbers.ttf");
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  background-color: #000 !important;
+  background: url("../public/images/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+audio, embed {
+  position: absolute;
+  z-index: -9999;
+}
+
+.hide_music_player {
+  display: none;
+}
+
 .App {
   text-align: center;
+  flex: display;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -14,7 +61,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +78,65 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.start_button {
+  font-family: holiday !important;
+  font-size: 1.4em !important;
+  padding: .5em 1.3em !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+
+.glass {
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  margin: 2em;
+}
+
+.glass-padding {
+  padding: 3rem;
+}
+
+.wish_text {
+  font-family: holiday;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 15px rgb(255, 255, 255), 0 0 4px rgb(0, 0, 0);
+}
+
+.number_text {
+  font-family: bdaynumbers;
+  font-size: 10em;
+  color: #FFFF00;
+
+  --animate-duration: 2000ms;
+  --animate-delay: 6000ms;
+}
+
+.btn-round {
+  height: 4em;
+  width: 4em;
+  border-radius: 150em !important;
+}
+
+.btn-round:hover:active {
+  background-color: red !important;
+}
+
+.btn-warning:hover {
+  background-color: red !important;
+
 }
