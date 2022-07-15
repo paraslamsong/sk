@@ -7,6 +7,7 @@ import { fadeIn } from 'react-animations'
 import { useEffect } from "react";
 
 import music from '../musics/wish.m4a';
+import { Cake } from "./cake";
 
 var audio = new Audio(music);
 
@@ -31,24 +32,26 @@ export default function WishPage() {
                     </div>
                     <br />
                 </div>
-            </div> <div className={styles.color_text}>
+            </div>
+            {/* <Cake /> */}
+            <div className={styles.color_text}>
                 <div className={styles.red + " animate__animated  animate__slideInUp"}>
-                    May the sun shine you new energy every-day;
+                    May the sun shine you new energy <span style={{ color: "#ff0800" }}>every-day;</span>
                 </div>
                 <div className={styles.green + " animate__animated  animate__slideInUp"}>
-                    May the moon highlight your smile every-night;
+                    May the moon shine your smile <span style={{ color: "#a7fc00" }}>every-night;</span>
                 </div>
                 <div className={styles.blue + " animate__animated  animate__slideInUp"}>
-                    May the coluds smile at you every-dawn;
+                    May the coluds smile at you <span style={{ color: "#00bfff" }}>every-dawn;</span>
                 </div>
                 <div className={styles.yellow + " animate__animated  animate__slideInUp"}>
-                    May the breeze blow your hairs every-twilight;
+                    May the breeze blow your hairs <span style={{ color: "#990aff" }}>every-twilight;</span>
                 </div>
                 <div className={styles.yellow + " animate__animated  animate__slideInUp"}>
-                    May the universe give spark to your eyes every-morning;
+                    May the universe give spark your eyes <span style={{ color: "aqua" }}>every-morning;</span>
                 </div>
                 <div className={styles.light_blue + " animate__animated  animate__slideInUp"}>
-                    And..... the time give you best moments every-dusk;
+                    And..... the time give you best moments <span style={{ color: "yellow" }}>every-dusk;</span>
                 </div>
             </div>
         </div>
