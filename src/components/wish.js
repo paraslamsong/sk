@@ -1,9 +1,7 @@
 import { Image } from "react-bootstrap";
-import light from "../assets/images/lights.jpg";
 import butterfly from "../assets/images/butterfly.png";
 import styles from "../assets/styles/wish.module.css";
-import Typewriter from 'typewriter-effect';
-import { fadeIn } from 'react-animations'
+
 import { useEffect } from "react";
 
 import music from '../musics/wish.m4a';

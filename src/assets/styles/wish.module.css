@@ -46,11 +46,11 @@
 
 .wish_box {
     padding: 2rem;
-    background-image: url("../../../public/images/tulip_bg.png") !important;
+    background-image: url("../../../public/images/tulips.png") !important;
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
+    background-blend-mode: multiply !important;
 }
 
 
