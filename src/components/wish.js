@@ -12,8 +12,7 @@ var audio = new Audio(music);
 export default function WishPage() {
 
     useEffect(() => {
-
-        // audio.play();
+        audio.play();
     }, [])
     return <div className="glass  animate__animated animate__zoomIn animate__faster">
         <div className={styles.wish_box}>
