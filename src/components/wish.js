@@ -34,7 +34,7 @@ export default function WishPage() {
             {/* <Cake /> */}
             <div className={styles.color_text}>
                 <div className={styles.red + " animate__animated  animate__slideInUp"}>
-                    May the sun shine you new energy <span style={{ color: "#ff0800" }}>every-day;</span>
+                    May the sun give you new energy <span style={{ color: "#ff0800" }}>every-day;</span>
                 </div>
                 <div className={styles.green + " animate__animated  animate__slideInUp"}>
                     May the moon shine your smile <span style={{ color: "#a7fc00" }}>every-night;</span>
@@ -46,7 +46,7 @@ export default function WishPage() {
                     May the breeze blow your hairs <span style={{ color: "#990aff" }}>every-twilight;</span>
                 </div>
                 <div className={styles.yellow + " animate__animated  animate__slideInUp"}>
-                    May the universe give spark your eyes <span style={{ color: "aqua" }}>every-morning;</span>
+                    May the universe spark your eyes <span style={{ color: "aqua" }}>every-morning;</span>
                 </div>
                 <div className={styles.light_blue + " animate__animated  animate__slideInUp"}>
                     And..... the time give you best moments <span style={{ color: "yellow" }}>every-dusk;</span>
