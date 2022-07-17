@@ -5,21 +5,21 @@ import styles from "../assets/styles/wish.module.css";
 import { useEffect } from "react";
 
 import music from '../musics/wish.m4a';
-import { Cake } from "./cake";
 
 var audio = new Audio(music);
 
 export default function WishPage() {
 
     useEffect(() => {
-        audio.play();
+        audio.volume = 0.09;
+        // audio.play();
     }, [])
     return <div className="glass  animate__animated animate__zoomIn animate__faster">
         <div className={styles.wish_box}>
             {/* <Image className={styles.img_box} src={light} fluid /> */}
             <div className="row">
                 <div className="col-md-5  col-sm-12 animate__animated animate__jackInTheBox">
-                    <Image src={butterfly} fluid height={40} />
+                    <Image src={butterfly} fluid height={200} width={200} />
                 </div>
                 <div className={"col-md-7 col-sm-12" + styles.wish_text}>
                     <div className={"animate__animated align-middle animate__fadeInUp " + styles.wish_text}>
@@ -51,6 +51,7 @@ export default function WishPage() {
                     And..... the time give you best moments <span style={{ color: "yellow" }}>every-dusk;</span>
                 </div>
             </div>
+            <div style={{ height: 100 }} />
         </div>
     </div>
 }
