@@ -3,18 +3,30 @@ import { Image } from "react-bootstrap";
 import butterfly from "../assets/images/btfly.png";
 import styles from "../assets/styles/wish.module.css";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import music from '../musics/wish.m4a';
 
 var audio = new Audio(music);
 
+var volume = 0;
 export default function WishPage() {
+    const [time, setTime] = useState(Date.now());
+    useEffect(() => {
+
+        const interval = setInterval(() => setTime(Date.now()), 160);
+        audio.volume = 0;
+        audio.play();
+    }, [])
 
     useEffect(() => {
-        audio.volume = 0.09;
-        // audio.play();
-    }, [])
+        if (volume >= 0.8) {
+            return;
+        }
+        volume = volume + 0.08
+        audio.volume = volume;
+
+    }, [time])
     return <div className="glass  animate__animated animate__zoomIn animate__faster">
         <div className={styles.wish_box}>
             {/* <Image className={styles.img_box} src={light} fluid /> */}
