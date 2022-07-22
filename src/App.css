@@ -24,12 +24,13 @@ html {
 
 body {
   background-color: #000 !important;
-  background: url("../public/images/background.jpg");
+  /* background: url("../public/images/background.jpg"); */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  width: 100%;
 }
 
 audio, embed {
@@ -95,12 +96,12 @@ audio, embed {
 
 .glass {
   max-width: 850px;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(0, 0, 0, 0); */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px) !important;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px) !important;
   border-radius: 10px;
-  border: 3px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   margin: 2em;
 }
