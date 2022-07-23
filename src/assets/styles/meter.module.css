@@ -4,6 +4,7 @@
     left: 14%;
     width: 300px;
     height: 1px;
+    overflow: hidden;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
     animation: meteor 6.1s linear infinite;
@@ -25,6 +26,7 @@
     top: 222px;
     left: 37%;
     width: 300px;
+    overflow: hidden;
     height: 1px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
@@ -47,6 +49,7 @@
     top: 250px;
     left: 97%;
     width: 300px;
+    overflow: hidden;
     height: 1px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
@@ -70,6 +73,7 @@
     left: 29%;
     width: 300px;
     height: 1px;
+    overflow: hidden;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
     animation: meteor 4.2s linear infinite;
@@ -92,6 +96,7 @@
     left: 77%;
     width: 300px;
     height: 1px;
+    overflow: hidden;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
     animation: meteor 7.8s linear infinite;
@@ -114,6 +119,7 @@
     left: 42%;
     width: 300px;
     height: 1px;
+    overflow: hidden;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
     animation: meteor 5.7s linear infinite;
@@ -135,6 +141,7 @@
     top: 235px;
     left: 92%;
     width: 300px;
+    overflow: hidden;
     height: 1px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
@@ -157,6 +164,7 @@
     top: 137px;
     left: 58%;
     width: 300px;
+    overflow: hidden;
     height: 1px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
@@ -179,6 +187,7 @@
     top: 292px;
     left: 48%;
     width: 300px;
+    overflow: hidden;
     height: 1px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
@@ -201,6 +210,7 @@
     top: 153px;
     left: 24%;
     width: 300px;
+    overflow: hidden;
     height: 1px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
@@ -223,6 +233,7 @@
     top: 175px;
     left: 86%;
     width: 300px;
+    overflow: hidden;
     height: 3px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 0, 0));
@@ -244,6 +255,7 @@
     position: absolute;
     top: 269px;
     left: 76%;
+    overflow: hidden;
     width: 300px;
     height: 1px;
     transform: rotate(-45deg);
@@ -267,6 +279,7 @@
     top: 70px;
     left: 97%;
     width: 300px;
+    overflow: hidden;
     height: 1px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
@@ -288,6 +301,7 @@
     position: absolute;
     top: 119px;
     left: 35%;
+    overflow: hidden;
     width: 300px;
     height: 1px;
     transform: rotate(-45deg);
@@ -310,6 +324,7 @@
     position: absolute;
     top: 150px;
     left: 83%;
+    overflow: hidden;
     width: 300px;
     height: 1px;
     transform: rotate(-45deg);
@@ -324,6 +339,7 @@
     height: 5px;
     border-radius: 50%;
     margin-top: -2px;
+    overflow: hidden;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 15px 3px #fff;
 }
@@ -333,15 +349,23 @@
         opacity: 1;
         margin-top: -300px;
         margin-right: -300px;
+        background-color: #fff;
     }
 
     12% {
-        opacity: 0;
+        background-color: #ff0;
+        opacity: 0.8;
+    }
+
+    13% {
+        background-color: #f00;
+        opacity: 0.6;
     }
 
     15% {
-        margin-top: 300px;
-        margin-left: -600px;
+        background-color: #f00;
+        margin-top: 30%;
+        margin-left: -60%;
         opacity: 0;
     }
 
