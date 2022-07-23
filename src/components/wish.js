@@ -16,7 +16,7 @@ export default function WishPage() {
 
         const interval = setInterval(() => setTime(Date.now()), 160);
         audio.volume = 0;
-        audio.play();
+        // audio.play();
     }, [])
 
     useEffect(() => {
