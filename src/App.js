@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Candle from './components/candle'
 import StartPage from './components/start_page'
@@ -18,9 +18,7 @@ import {
 import WishPage from './components/wish';
 
 function App() {
-  var audio = new Audio(music);
 
-  var meters = [];
 
   return (
     <div className="App d-flex justify-content-center">

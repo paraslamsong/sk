@@ -1,6 +1,6 @@
 import { Image } from "react-bootstrap";
 // import butterfly from "../assets/images/butterfly.png";
-import butterfly from "../assets/images/btfly.png";
+import butterfly from "../assets/images/btfly2.png";
 import styles from "../assets/styles/wish.module.css";
 
 import { useEffect, useState } from "react";
@@ -29,11 +29,9 @@ export default function WishPage() {
     }, [time])
     return <div className="glass  animate__animated animate__zoomIn animate__faster">
         <div className={styles.wish_box}>
-            {/* <Image className={styles.img_box} src={light} fluid /> */}
             <div className="row">
                 <div className="col-md-5  col-sm-12 animate__animated animate__jackInTheBox">
-                    {/* <Image src={butterfly} fluid height={200} width={200} /> */}
-                    <Image src={butterfly} fluid height={200} width={200} />
+                    <img className={styles.butterfly} src={butterfly} />
                 </div>
                 <div className={"col-md-7 col-sm-12" + styles.wish_text}>
                     <div className={"animate__animated align-middle animate__fadeInUp " + styles.wish_text}>
@@ -53,10 +51,13 @@ export default function WishPage() {
                     May the moon shine your smile, <span style={{ color: "#a7fc00" }}>every-night;</span>
                 </div>
                 <div className={styles.blue + " animate__animated  animate__slideInUp"}>
-                    May the coluds share happiness with you, <span style={{ color: "#00bfff" }}>every-dawn;</span>
+                    May the coluds uplift your happiness, <span style={{ color: "#00bfff" }}>every-dawn;</span>
                 </div>
                 <div className={styles.yellow + " animate__animated  animate__slideInUp"}>
-                    May the breeze touch your hairs, <span style={{ color: "#990aff" }}>every-twilight;</span>
+                    May the breeze nurse your hairs, <span style={{
+                        color: "#990aff",
+                        textShadow: "0px 0px 4px #CCF381"
+                    }}>every-twilight;</span>
                 </div>
                 <div className={styles.yellow + " animate__animated  animate__slideInUp"}>
                     May the universe spark your eyes <span style={{ color: "aqua" }}>every-morning;</span>

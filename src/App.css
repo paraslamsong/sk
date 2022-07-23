@@ -130,6 +130,8 @@ audio, embed {
 .btn-round {
   height: 4em;
   width: 4em;
+  border-width: 10px;
+  cursor: pointer !important;
   border-radius: 150em !important;
 }
 
